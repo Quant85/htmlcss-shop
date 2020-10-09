@@ -2,22 +2,71 @@
 *{
   box-sizing: border-box;
   margin: 0;
+  z-index: 0;
 }
 
 /* Class Utility */
 
+
 .bg-green{
   background-color: green;
+  
 }
 
 .bg-red{
   background-color: red;
 }
 
-.inline {
+.disp-inline {
   display: inline-block;
 }
 
+.pos-rel{
+  position: relative;
+}
+
+.pos-abb{
+  position: absolute;
+  top: 0;
+}
+
+img{
+  z-index: 0;
+}
+
+.row {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.discount{
+  z-index: 1;
+  right: 0;
+  line-height: 1.2em;
+}
+
+.discount::after{
+  content: " \0025";
+}
+
+.discount::before {
+  content: "\2212 ";
+}
 
 
+.add-cart::after{
+  padding: 5px;
+  content: "\2764";
+  font-size: 1.8em;
+  color: red;
+  text-shadow: 1px 1px 2px black;
+}
 
+.add-cart{
+  bottom: 50px;
+  visibility: hidden;
+}
+
+div.product.box:hover .add-cart {
+  visibility: visible;
+}
