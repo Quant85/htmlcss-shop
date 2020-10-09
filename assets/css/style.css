@@ -45,7 +45,10 @@ header, footer {
   color: #eb0037;
 }
 
-.product{
+
+.product,
+.discount,
+.add-cart {
   cursor: pointer;
   transition:0.3s;
   transition-timing-function:ease-out;
@@ -77,8 +80,6 @@ img{
   line-height: 1.3em;
   color: white;
   border:1px solid rgb(194, 194, 194);
-  transition:0.3s;
-  transition-timing-function:ease-out;
 }
 
 .discount:hover{
@@ -101,23 +102,20 @@ img{
 }
 
 .add-cart{
-  cursor: pointer;
   height: 2.5rem;
   width: 2.5rem;
+  margin: auto;
+  bottom: 50px;
   line-height: 2.6rem;
   background: #ffffff;
   border-radius: 50%;
   color: rgb(112, 110, 110);
   box-shadow: 3px -2px 3px rgb(128, 58, 0);
-  transition:0.2s;
-  transition-timing-function:ease-out;
-  bottom: 50px;
   visibility: hidden;
-  margin: auto;
 }
 
 div.product.box:hover .add-cart {
-  visibility: visible;5
+  visibility: visible;
 }
 
 .add-cart:hover{
