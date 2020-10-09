@@ -30,6 +30,21 @@
   top: 0;
 }
 
+header, footer {
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.6em;
+  padding: 10px;
+  color: #00de64;
+  text-shadow: 1px 1px rgb(99, 95, 95);
+}
+
+.title h1::after{
+  content: "- Shop ";
+  color: #eb0037;
+}
+
 .product{
   cursor: pointer;
 }
@@ -75,10 +90,21 @@ div.product.box:hover .add-cart {
   visibility: visible;
 }
 
-.made::before{
-  
+
+footer{
+  width: 80vw;
   margin: auto;
   text-align: center;
-  content: "\261B \00A9 ";
+  font-size: 1.6em;
+}
 
+.made::before{  
+  content: "\261B";
+  color: #eb0037;
+}
+
+.made::after {
+  content: " \2714 Boolean Careers";
+  color: #00de64;
+  text-shadow:  1px 1px rgb(99, 95, 95);
 }
