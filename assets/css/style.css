@@ -14,10 +14,10 @@
 }
 
 .bg-red{
-  background-color: red;
+  background-color: #ff003c;
 }
 
-.disp-inline {
+.disp-inline-bl {
   display: inline-block;
 }
 
@@ -47,21 +47,42 @@ header, footer {
 
 .product{
   cursor: pointer;
+  transition:0.3s;
+  transition-timing-function:ease-out;
+}
+
+.product:hover{
+  scale: 1.02;
+  margin: 5px;
 }
 
 img{
   z-index: 0;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 10px;
 }
 
 .row {
   text-align: center;
-  margin: 20px auto;
+  margin-top: 5px;
 }
 
 .discount{
+  padding: 0px 5px;
+  border-radius: 5px;
   z-index: 1;
   right: 0;
-  line-height: 1.2em;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px rgb(150, 145, 145);
+  line-height: 1.3em;
+  color: white;
+  border:1px solid rgb(194, 194, 194);
+  transition:0.3s;
+  transition-timing-function:ease-out;
+}
+
+.discount:hover{
+  scale: 1.05;
 }
 
 .discount::after{
@@ -74,20 +95,35 @@ img{
 
 
 .add-cart::after{
-  padding: 5px;
   content: "\2764";
   font-size: 1.8em;
-  color: red;
   text-shadow: 1px 1px 2px black;
 }
 
 .add-cart{
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.6rem;
+  background: #ffffff;
+  border-radius: 50%;
+  color: rgb(112, 110, 110);
+  box-shadow: 3px -2px 3px rgb(128, 58, 0);
+  transition:0.2s;
+  transition-timing-function:ease-out;
   bottom: 50px;
   visibility: hidden;
+  margin: auto;
 }
 
 div.product.box:hover .add-cart {
-  visibility: visible;
+  visibility: visible;5
+}
+
+.add-cart:hover{
+  color: #eb0037;
+  box-shadow: 3px -2px 3px green;
+  scale: 1.1;
 }
 
 
