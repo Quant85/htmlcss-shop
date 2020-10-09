@@ -1,0 +1,23 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Class Utility */
+
+.bg-green{
+  background-color: green;
+}
+
+.bg-red{
+  background-color: red;
+}
+
+.inline {
+  display: inline-block;
+}
+
+
+
+
