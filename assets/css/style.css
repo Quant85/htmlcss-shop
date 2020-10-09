@@ -30,6 +30,10 @@
   top: 0;
 }
 
+.product{
+  cursor: pointer;
+}
+
 img{
   z-index: 0;
 }
@@ -69,4 +73,12 @@ img{
 
 div.product.box:hover .add-cart {
   visibility: visible;
+}
+
+.made::before{
+  
+  margin: auto;
+  text-align: center;
+  content: "\261B \00A9 ";
+
 }
